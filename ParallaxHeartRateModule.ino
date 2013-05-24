@@ -1,24 +1,14 @@
 //Dino Tinitigan
 //Heart Rate Module
 
-
-byte ID = 175;
-byte header = 170;
-byte dataLength = 1;
 byte heartRate;
 
-int bPin = 10;
-int sPin = 11;
 int ledPin = 13;
 int sensorPin = 9;
-int test;
-int priority = 200;
-int wait = 5000;
 int pulseCount = 0;
 int duration;
 const int SAMPLE = 10;
 unsigned long pulseTimeValues[SAMPLE];
-bool timedOut;
 //################################################################################################################
 //################################################################################################################
 void setup() 
